@@ -15,8 +15,11 @@ sudo docker volume create main_keys
 # run bash
 #sudo docker run -it -p 6000:6000 -p 9090:9090 --mount source=main_db,target=/credits/main_db --mount source=main_keys,target=/credits/main_keys credits_mainnet:latest bash
 
-# run node
+# run local repo node
 #sudo docker run -it -p 6000:6000 -p 9090:9090 --mount source=main_db,target=/credits/main_db --mount source=main_keys,target=/credits/main_keys credits_mainnet:latest
+
+# run node docker repo
+#sudo docker run -it -p 6000:6000 -p 9090:9090 --mount source=main_db,target=/credits/main_db --mount source=main_keys,target=/credits/main_keys pvl1175/credits_mainnet:4.2.410
 
 # additional example
 #./client --db-path main_db/ --public-key-file main_keys/public.txt --private-key-file main_keys/private.txt
