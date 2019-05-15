@@ -5,7 +5,7 @@ rm build/Credits_Network_for_Linux_x64_4_2_410.tar.gz
 g++ -pthread source/runner.cpp  -o build/runner
 cp common/* build/
 
-sudo docker build -t credits_mainnet .
+sudo docker build -t credits_mainnet:4.2.410 .
 sudo docker volume create main_db
 sudo docker volume create main_keys
 
